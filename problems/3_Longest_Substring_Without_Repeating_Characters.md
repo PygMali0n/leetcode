@@ -3,10 +3,10 @@
 - using a starting pointer to save the first index of current substring.
 - if find duplicate character then update the starting index with the next index of the previous one
 
-### 
-- time complexity: O(n) (iterate the whole string)
-### 
-- space complexity: O(min(m, n)) (distinct character stored in hashmap)
+### time complexity
+- O(n) (iterate the whole string)
+### space complexity
+- O(min(m, n)) (distinct character stored in hashmap)
 
 ### C++ implementation
 
