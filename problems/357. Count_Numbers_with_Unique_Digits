@@ -1,0 +1,20 @@
+## method: DP
+- F(n) = F(n-1) * m where m is the digit remaining
+
+## code
+```
+class Solution:
+    def countNumbersWithUniqueDigits(self, n: int) -> int:
+        dp = [0] * (n+1)
+        dp[0] = 1
+        for i in range(n):
+            if i == 0:
+                dp[i+1] = dp[i]*(9-i)
+            else:
+                dp[i+1] = dp[i]*(10-i)
+        return sum(dp)
+```
+
+## complexity
+- time: O(1)
+- space: O(1)
